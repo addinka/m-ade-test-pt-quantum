@@ -1,0 +1,19 @@
+<h2>Add Employee</h2>
+<form>
+    <div class="form-group">
+        <label for="name">NIP:</label>
+        <input [(ngModel)]="employee.nip" placeholder="NIP" name="nip" class="form-control" id="nip">
+    </div>
+    <div class="form-group">
+        <label for="surname">Nama:</label>
+        <input [(ngModel)]="employee.nama" placeholder="Nama" name="nama" class="form-control" id="nama">
+    </div>
+    <div class="form-group">
+        <label for="phone">Jabatan:</label>
+        <input [(ngModel)]="employee.jabatan" placeholder="Jabatan" name="jabatan" class="form-control" id="jabatan">
+    </div>
+    <div class="form-group text-center">
+        <button class="btn btn-success" (click)="createEmployee()">Create</button>
+    </div>
+
+</form>
